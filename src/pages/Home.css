@@ -1,0 +1,68 @@
+.home {
+  text-align: center;
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background: rgb(214, 216, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(214, 216, 255, 1) 0%,
+    rgba(247, 235, 255, 1) 100%
+  );
+  align-items: center;
+  padding: 2rem;
+}
+
+.home-container {
+  max-width: 800px;
+  width: 100%;
+}
+
+.social-icons-home {
+  margin-top: 20px; /* Tambahkan jarak dari teks di atasnya */
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.social-icons-home ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Ubah ke flex untuk membuat item sejajar */
+  justify-content: center; /* Pusatkan icon-icon */
+  gap: 20px; /* Berikan jarak antar icon */
+}
+
+.social-icons-home ul li {
+  margin: 0; /* Hapus margin bawah */
+}
+
+.social-icon-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; /* Perbesar sedikit ukuran icon */
+  height: 40px;
+  margin: 0;
+  background-color: #34495e;
+  color: #ecf0f1;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  font-size: 20px; /* Sesuaikan ukuran icon */
+}
+
+.social-icon-home:hover {
+  background-color: #3498db;
+  transform: translateY(-3px); /* Efek melayang saat hover */
+}
+
+.home h1 {
+  font-size: 2.5rem;
+}
+
+.home p {
+  font-size: 1.2rem;
+}

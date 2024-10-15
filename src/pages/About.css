@@ -1,0 +1,31 @@
+.about {
+  text-align: center;
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background: rgb(214, 216, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(214, 216, 255, 1) 0%,
+    rgba(247, 235, 255, 1) 100%
+  );
+  align-items: center;
+  padding: 2rem;
+}
+
+.about-container {
+  max-width: 800px;
+  width: 100%;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}

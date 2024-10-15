@@ -1,0 +1,136 @@
+.events {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background: rgb(214, 216, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(214, 216, 255, 1) 0%,
+    rgba(247, 235, 255, 1) 100%
+  );
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh; /* Gunakan min-height untuk memastikan tampilan awal penuh */
+}
+
+.events h1 {
+    padding-top: 6rem;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%; /* Pastikan grid menggunakan lebar penuh */
+  margin: 0 auto;
+  padding-bottom: 6rem; /* Tambahkan padding bawah */
+}
+
+.event-card {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); /* Warna latar belakang transparan */
+  backdrop-filter: blur(10px); /* Efek blur */
+  -webkit-backdrop-filter: blur(10px); /* Untuk dukungan Safari */
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -webkit-transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -moz-transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -ms-transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -o-transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.event-icon {
+  font-size: 2.5rem;
+  color: #4a90e2;
+  margin-bottom: 1rem;
+}
+
+.event-card h2 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.event-date {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.event-button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.event-button:hover {
+  background-color: #3a7bc8;
+}
+
+/* Modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 1.5rem;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 90%;
+    width: 400px;
+}
+
+.modal-content h2 {
+    margin-bottom: 1rem;
+}
+
+.modal-content button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.modal-content button:hover {
+    background-color: #3a7bc8;
+}
+
+@media (max-width: 768px) {
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+}
